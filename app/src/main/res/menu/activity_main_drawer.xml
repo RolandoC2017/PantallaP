@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_principal"
+            android:icon="@drawable/ic_home"
+            android:title="Principal" />
+        <item
+            android:id="@+id/nav_celular"
+            android:icon="@drawable/ic_celular"
+            android:title="Celulares y Smartphones" />
+        <item
+            android:id="@+id/nav_pc"
+            android:icon="@drawable/ic_pc"
+            android:title="PC" />
+        <item
+            android:id="@+id/nav_componente"
+            android:icon="@drawable/ic_componente"
+            android:title="Componentes" />
+    </group>
+
+    <item android:title="Favoritos">
+        <menu>
+                <item
+                    android:id="@+id/nav_favoritos"
+                    android:icon="@drawable/ic_heart"
+                    android:title="Favoritos" />
+                <item
+                    android:id="@+id/nav_shop"
+                    android:icon="@drawable/ic_shop"
+                    android:title="Compras" />
+        </menu>
+    </item>
+
+    <item android:title="Cuenta">
+        <menu>
+                <item
+                    android:id="@+id/nav_perfil"
+                    android:icon="@drawable/ic_perfil"
+                    android:title="Perfil" />
+                <item
+                    android:id="@+id/nav_setting"
+                    android:icon="@drawable/ic_config"
+                    android:title="Settings" />
+        </menu>
+    </item>
+</menu>

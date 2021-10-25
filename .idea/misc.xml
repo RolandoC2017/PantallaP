@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable-hdpi/boton_redondo.xml" value="0.2203125" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable-hdpi/boton_redondo_claro.xml" value="0.2203125" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable-hdpi/indicador.xml" value="0.2203125" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2203125" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable-xxxhdpi/colorinertmk.xml" value="0.1125" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable/botonpulsado.xml" value="0.1125" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable/fondo.xml" value="0.1125" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable/ic_menu_camera.xml" value="0.2203125" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.1125" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.2203125" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable/side_nav_bar.xml" value="0.2203125" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_info_huawei1.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_inicio.xml" value="0.18" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_java.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_main2.xml" value="0.22" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_prueba2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/app_bar_main.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/apple.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/content_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment__contenedor1.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_apple.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_celular.xml" value="0.18" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_componente.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_contenedor.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_contenedor2.xml" value="0.14010416666666667" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_gallery.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_pc.xml" value="0.22" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_slideshow.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/huawei.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/lg.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/nav_header_main.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/samsung.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/toolbar.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/xiaomi_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/menu/activity_main_drawer.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/menu/main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1125" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2203125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

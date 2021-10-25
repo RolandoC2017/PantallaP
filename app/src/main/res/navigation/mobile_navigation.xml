@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_principal">
+
+    <fragment
+        android:id="@+id/nav_principal"
+        android:name="com.example.pantallap.ui.home.HomeFragment"
+        android:label="Principal"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_celular"
+        android:name="com.example.pantallap.ui.celular.GalleryFragment"
+        android:label="Celulares y Smartphones"
+        tools:layout="@layout/fragment_celular" />
+
+    <fragment
+        android:id="@+id/nav_pc"
+        android:name="com.example.pantallap.ui.slideshow.SlideshowFragment"
+        android:label="PC"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_componente"
+        android:name="com.example.pantallap.ui.componente.fragmentComponente"
+        android:label="Componentes"
+        tools:layout="@layout/fragment_componente" />
+
+</navigation>
