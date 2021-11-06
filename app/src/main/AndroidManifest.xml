@@ -12,9 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PantallaP">
         <activity
+            android:name=".VerProductosDetalle"
+            android:exported="true" />
+        <activity
             android:name=".InfoHuawei1"
             android:exported="true"
-            android:theme="@style/Theme.PantallaP.temaPopup"/>
+            android:theme="@style/Theme.PantallaP.temaPopup" />
         <activity
             android:name=".inicio"
             android:exported="true">

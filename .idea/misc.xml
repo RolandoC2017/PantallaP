@@ -8,6 +8,8 @@
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable-hdpi/indicador.xml" value="0.2203125" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2203125" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable-xxxhdpi/colorinertmk.xml" value="0.1125" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable/boton_gris.xml" value="0.2203125" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable/boton_redondo_imagen.xml" value="0.2203125" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable/botonpulsado.xml" value="0.1125" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable/fondo.xml" value="0.1125" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
@@ -35,10 +37,15 @@
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_pc.xml" value="0.22" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_slideshow.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/huawei.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/huaweiproductos.xml" value="0.25" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/lg.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/motorola.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/nav_header_main.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/productoscardview.xml" value="0.33" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/samsung.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/toolbar.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/ver_productos_detalle.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/xiaomi.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/xiaomi_fragment.xml" value="0.1" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/menu/activity_main_drawer.xml" value="0.25" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/menu/main.xml" value="0.20416666666666666" />
