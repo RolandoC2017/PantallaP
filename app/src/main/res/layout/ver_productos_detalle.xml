@@ -79,6 +79,7 @@
                 android:orientation="horizontal">
 
                 <Button
+                    android:id="@+id/btnmenos"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:background="@android:color/transparent"
@@ -87,18 +88,20 @@
                     tools:ignore="TouchTargetSizeCheck" />
 
                 <EditText
-                    android:id="@+id/editTextNumber"
+                    android:id="@+id/cantidad"
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:background="@null"
                     android:ems="10"
+                    android:focusable="false"
+                    android:textColor="@color/principal"
                     android:inputType="number"
                     android:text="1"
                     android:textAlignment="center"
                     tools:ignore="TouchTargetSizeCheck" />
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/btnmas"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:background="@android:color/transparent"
