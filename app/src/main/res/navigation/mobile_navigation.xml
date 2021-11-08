@@ -27,5 +27,10 @@
         android:name="com.example.pantallap.ui.componente.fragmentComponente"
         android:label="Componentes"
         tools:layout="@layout/fragment_componente" />
+    <fragment
+        android:id="@+id/nav_shop"
+        android:name="com.example.pantallap.Carrito.Carrito"
+        android:label="fragment_carrito"
+        tools:layout="@layout/fragment_carrito" />
 
 </navigation>

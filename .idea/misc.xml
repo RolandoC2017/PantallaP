@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/HP/.gradle/caches/transforms-3/a1ad1b515fec9f19b104a334f1f5a525/transformed/jetified-whynotimagecarousel-2.0.5/res/layout/item_carousel.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable-hdpi/boton_redondo.xml" value="0.2203125" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable-hdpi/boton_redondo_claro.xml" value="0.2203125" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable-hdpi/indicador.xml" value="0.2203125" />
@@ -28,6 +29,7 @@
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/content_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment__contenedor1.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_apple.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_carrito.xml" value="0.25" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_celular.xml" value="0.18" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_componente.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_contenedor.xml" value="0.20416666666666666" />
@@ -38,6 +40,7 @@
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_slideshow.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/huawei.xml" value="0.25" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/huaweiproductos.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/item_carrito.xml" value="0.25" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/lg.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/motorola.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/nav_header_main.xml" value="0.25" />

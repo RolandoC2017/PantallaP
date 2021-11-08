@@ -84,8 +84,7 @@
                     android:layout_height="40dp"
                     android:background="@android:color/transparent"
                     android:text="-"
-                    android:textColor="@color/black"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    android:textColor="@color/black"/>
 
                 <EditText
                     android:id="@+id/cantidad"
@@ -97,8 +96,7 @@
                     android:textColor="@color/principal"
                     android:inputType="number"
                     android:text="1"
-                    android:textAlignment="center"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    android:textAlignment="center"/>
 
                 <Button
                     android:id="@+id/btnmas"
@@ -106,16 +104,16 @@
                     android:layout_height="40dp"
                     android:background="@android:color/transparent"
                     android:text="+"
-                    android:textColor="@color/black"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    android:textColor="@color/black"/>
             </LinearLayout>
             <Button
+                android:id="@+id/btnCarrito"
                 android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:background="@color/principal"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="10dp"
-                android:text="Carrito" />
+                android:backgroundTint="@color/orange"
+                android:text="CARRITO"
+                android:layout_height="wrap_content"/>
         </LinearLayout>
 
     </LinearLayout>
