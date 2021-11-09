@@ -12,6 +12,8 @@ class inicio : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
 
+
+        //prueba comentario
         //temporizador de carga de pantalla inicio al MainActivity
         Handler().postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
