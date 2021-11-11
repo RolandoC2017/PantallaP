@@ -14,7 +14,8 @@ import com.example.pantallap.VerProductosDetalle
 
 
 class ProductosAdapterCV(val productos:ArrayList<ProductosCardView>):RecyclerView.Adapter<ProductosAdapterCV.ViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductosAdapterCV.ViewHolder {
+
+        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductosAdapterCV.ViewHolder {
         var vista = LayoutInflater.from(parent.context).inflate(R.layout.productoscardview,parent,false)
         return ViewHolder(vista)
     }

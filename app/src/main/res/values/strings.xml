@@ -11,7 +11,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="txtCargando">CARGANDO...</string>
 
-    <string name="titulo">%1$s</string>
+    <string name="nombre">%1$s</string>
     <string name="descripcion">%1$s</string>
-    <string name="precio">%1$s</string>
+    <string name="precio2">%1$s</string>
 </resources>

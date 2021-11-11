@@ -22,11 +22,13 @@
         android:name="com.example.pantallap.ui.slideshow.SlideshowFragment"
         android:label="PC"
         tools:layout="@layout/fragment_slideshow" />
+
     <fragment
         android:id="@+id/nav_componente"
-        android:name="com.example.pantallap.ui.componente.fragmentComponente"
-        android:label="Componentes"
+        android:name="com.example.pantallap.ui.componente.FragmentComponente"
+        android:label="fragment_componente"
         tools:layout="@layout/fragment_componente" />
+
     <fragment
         android:id="@+id/nav_shop"
         android:name="com.example.pantallap.Carrito.Carrito"

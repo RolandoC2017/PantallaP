@@ -24,7 +24,7 @@
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_main2.xml" value="0.22" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_prueba2.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/app_bar_main.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/app_bar_main.xml" value="0.25" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/apple.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/content_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment__contenedor1.xml" value="0.20416666666666666" />
@@ -42,6 +42,8 @@
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/huaweiproductos.xml" value="0.25" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/item_carrito.xml" value="0.25" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/lg.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/llamar_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/llamar_fragmento.xml" value="0.20427305888483585" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/motorola.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/nav_header_main.xml" value="0.25" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/productoscardview.xml" value="0.33" />
