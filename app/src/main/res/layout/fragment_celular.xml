@@ -11,10 +11,14 @@
         android:id="@+id/tab1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:theme="@style/Theme.Transparent"
+        app:tabIconTintMode="multiply"
+        app:tabIconTint="#ffffff"
         app:tabGravity="center"
-        android:textAllCaps="false"
         app:tabBackground="@color/white"
-        app:tabTextColor="@color/red"/>
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+        app:tabSelectedTextColor="@color/purple_700"
+        app:tabTextColor="@color/principal" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewp1"

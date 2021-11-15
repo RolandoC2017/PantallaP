@@ -1,4 +1,4 @@
-package com.example.pantallap
+package com.example.pantallap.Data
 
 import java.io.Serializable
 

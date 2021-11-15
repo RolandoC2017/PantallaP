@@ -15,12 +15,8 @@
             android:name=".LlamarFragment"
             android:exported="true" />
         <activity
-            android:name=".VerProductosDetalle"
+            android:name=".DetalleProducto.VerProductosDetalle"
             android:exported="true" />
-        <activity
-            android:name=".InfoHuawei1"
-            android:exported="true"
-            android:theme="@style/Theme.PantallaP.temaPopup" />
         <activity
             android:name=".inicio"
             android:exported="true">

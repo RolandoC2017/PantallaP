@@ -8,6 +8,8 @@
     app:cardCornerRadius="10dp"
     app:cardElevation="5dp">
 
+    <!-- **************************************************************** -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -38,10 +40,13 @@
             android:paddingLeft="10dp"
             android:paddingTop="8dp" />
 
+        <!-- **************************************************************** -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:id="@+id/precio2"
                 android:layout_width="wrap_content"
@@ -53,14 +58,19 @@
                 android:textColor="@color/red" />
 
             <ImageButton
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/boton_redondo_imagen"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="6dp"
+                android:background="@android:color/transparent"
                 app:srcCompat="@drawable/ic_heart" />
 
         </LinearLayout>
+
+        <!-- **************************************************************** -->
+
     </LinearLayout>
+
+    <!-- **************************************************************** -->
 
 </androidx.cardview.widget.CardView>

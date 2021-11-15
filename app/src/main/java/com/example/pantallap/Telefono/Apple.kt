@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pantallap.Adapters.ProductosAdapterCV
-import com.example.pantallap.ProductosCardView
+import com.example.pantallap.Data.ProductosCardView
 import com.example.pantallap.R
 
 class Apple : Fragment() {
@@ -26,7 +26,8 @@ class Apple : Fragment() {
         var recyclerView: RecyclerView = root.findViewById<RecyclerView>(R.id.recycle)
         var productos = ArrayList<ProductosCardView>()
 
-        productos.add(ProductosCardView("iPhone 11 128GB - Negro","S/ 4,599.00","3499.00",R.drawable.iphone11,
+        productos.add(
+            ProductosCardView("iPhone 11 128GB - Negro","S/ 4,599.00","3499",R.drawable.iphone11,
             "CARACTERISTICAS DESTACADAS:\n" + "\n" +
                     "Pantalla LCD Multi-Touch de 6.1 pulgadas \n" +
                     "Chip A13 Bionic\n" +
@@ -47,10 +48,11 @@ class Apple : Fragment() {
                     "Memoria RAM: 4\n" +
                     "Megapixeles: 12.0\n" +
                     "Sistema operativo: iOS 13\n" +
-                    "Qué hay en la caja: iPhone 11, Cable de Lightning a USB, Manuales\n"+ "\n"))
-        productos.add(ProductosCardView("Apple IPhone XR 64GB - Negro","S/ 4,559.00","2489.00",R.drawable.iphonexr,"ANDROID 10"))
-        productos.add(ProductosCardView("Apple IPhone 7 32GB - Oro Rosa","S/ 4,000.00","1549.00",R.drawable.iphone7,"ANDROID 10"))
-        productos.add(ProductosCardView("Apple IPhone XS MAX 64GB 4GB 8MPX 2915MAH 5.5 - Space Gray","S/ 4,505.00","3267.00",R.drawable.iphonexs,"ANDROID 10"))
+                    "Qué hay en la caja: iPhone 11, Cable de Lightning a USB, Manuales\n"+ "\n")
+        )
+        productos.add(ProductosCardView("Apple IPhone XR 64GB - Negro","S/ 4,559.00","2489",R.drawable.iphonexr,"ANDROID 10"))
+        productos.add(ProductosCardView("Apple IPhone 7 32GB - Oro Rosa","S/ 4,000.00","1549",R.drawable.iphone7,"ANDROID 10"))
+        productos.add(ProductosCardView("Apple IPhone XS MAX 64GB 4GB 8MPX 2915MAH 5.5 - Space Gray","S/ 4,505.00","3267",R.drawable.iphonexs,"ANDROID 10"))
         var adapter = ProductosAdapterCV(productos)
 
         //recyclerView.layoutManager = LinearLayoutManager(root.context,LinearLayoutManager.VERTICAL,false)

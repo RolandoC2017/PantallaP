@@ -1,6 +1,5 @@
 package com.example.pantallap.Adapters
 
-import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
@@ -9,8 +8,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pantallap.R
-import com.example.pantallap.ProductosCardView
-import com.example.pantallap.VerProductosDetalle
+import com.example.pantallap.Data.ProductosCardView
+import com.example.pantallap.DetalleProducto.VerProductosDetalle
 
 
 class ProductosAdapterCV(val productos:ArrayList<ProductosCardView>):RecyclerView.Adapter<ProductosAdapterCV.ViewHolder>() {
@@ -37,7 +36,7 @@ class ProductosAdapterCV(val productos:ArrayList<ProductosCardView>):RecyclerVie
             val imagen = itemView.findViewById<ImageView>(R.id.imagen)
             nombre.text = producto.nombre
             precio1.text = producto.precio1
-            precio2.text = "S/ "+ producto.precio2
+            precio2.text = "S/ "+String.format("%.2f", producto.precio2.toString().toDouble())
             imagen.setImageResource(producto.imagen)
 
             itemView.setOnClickListener {
