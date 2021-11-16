@@ -26,6 +26,7 @@ class Carrito : Fragment() {
         val root = inflater.inflate(R.layout.fragment_carrito, container, false)
 
         var lista: RecyclerView = root.findViewById(R.id.listaCarrito)
+        var total:TextView=root.findViewById(R.id.idtotal)
 
         var listaProductos = ArrayList<itemCarrito>()
 
@@ -39,6 +40,7 @@ class Carrito : Fragment() {
                     itemCarrito(respuesta.getString(1), respuesta.getString(2), respuesta.getString(3), respuesta.getInt(4), respuesta.getString(5))
 
                 )
+                total.text= (+respuesta.getString(3).toDouble()).toString()
 
             } while (respuesta.moveToNext())
         }
