@@ -19,7 +19,7 @@ class VerProductosDetalle : AppCompatActivity() {
         override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.ver_productos_detalle)
-
+            val numCarrito=findViewById<TextView>(R.id.toolbarIndicator)
         var toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
@@ -34,6 +34,7 @@ class VerProductosDetalle : AppCompatActivity() {
 
         val cantidad = findViewById<EditText>(R.id.cantidad)
         val precio = findViewById<TextView>(R.id.advPrecio)
+            var num=0
 
         btnmas.setOnClickListener {
             cantidad.setText((cantidad.text.toString().toInt() + 1).toString())
@@ -55,6 +56,8 @@ class VerProductosDetalle : AppCompatActivity() {
 
             //var intent = Intent(this, LlamarFragment::class.java)
             //startActivity(intent)
+             num=+1
+            numCarrito.text=num.toString()
         }
 
             val botonCar = findViewById<ImageButton>(R.id.toolbarCar)
