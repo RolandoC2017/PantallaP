@@ -5,9 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.CheckBox
+import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pantallap.Adapters.ProductosAdapterCV
+import com.example.pantallap.BD.Conexion
 import com.example.pantallap.Data.ProductosCardView
 import com.example.pantallap.R
 
@@ -48,11 +51,11 @@ class Apple : Fragment() {
                     "Memoria RAM: 4\n" +
                     "Megapixeles: 12.0\n" +
                     "Sistema operativo: iOS 13\n" +
-                    "Qué hay en la caja: iPhone 11, Cable de Lightning a USB, Manuales\n"+ "\n")
+                    "Qué hay en la caja: iPhone 11, Cable de Lightning a USB, Manuales\n"+ "\n",false)
         )
-        productos.add(ProductosCardView("Apple IPhone XR 64GB - Negro","S/ 4,559.00","2489",R.drawable.iphonexr,"ANDROID 10"))
-        productos.add(ProductosCardView("Apple IPhone 7 32GB - Oro Rosa","S/ 4,000.00","1549",R.drawable.iphone7,"ANDROID 10"))
-        productos.add(ProductosCardView("Apple IPhone XS MAX 64GB 4GB 8MPX 2915MAH 5.5 - Space Gray","S/ 4,505.00","3267",R.drawable.iphonexs,"ANDROID 10"))
+        productos.add(ProductosCardView("Apple IPhone XR 64GB - Negro","S/ 4,559.00","2489",R.drawable.iphonexr,"ANDROID 10",false))
+        productos.add(ProductosCardView("Apple IPhone 7 32GB - Oro Rosa","S/ 4,000.00","1549",R.drawable.iphone7,"ANDROID 10",false))
+        productos.add(ProductosCardView("Apple IPhone XS MAX 64GB 4GB 8MPX 2915MAH 5.5 - Space Gray","S/ 4,505.00","3267",R.drawable.iphonexs,"ANDROID 10",false))
         var adapter = ProductosAdapterCV(productos)
 
         //recyclerView.layoutManager = LinearLayoutManager(root.context,LinearLayoutManager.VERTICAL,false)
@@ -65,5 +68,4 @@ class Apple : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
     }
-
 }

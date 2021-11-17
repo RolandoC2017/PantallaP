@@ -34,5 +34,10 @@
         android:name="com.example.pantallap.Carrito.Carrito"
         android:label="fragment_carrito"
         tools:layout="@layout/fragment_carrito" />
+    <fragment
+        android:id="@+id/nav_favoritos"
+        android:name="com.example.pantallap.VerFavoritos"
+        android:label="fragment_ver_favoritos"
+        tools:layout="@layout/fragment_ver_favoritos" />
 
 </navigation>

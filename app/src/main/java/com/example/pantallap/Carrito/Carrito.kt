@@ -30,7 +30,7 @@ class Carrito : Fragment() {
 
         var conexion = Conexion(requireContext())
         var db = conexion.writableDatabase
-        var sql = "select * from prueba1"
+        var sql = "select * from BDcarrito"
         var respuesta = db.rawQuery(sql, null)
         if (respuesta.moveToFirst()) {
             do {

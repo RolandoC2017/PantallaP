@@ -33,10 +33,10 @@ class Huawei : Fragment() {
         var recyclerView:RecyclerView = root.findViewById<RecyclerView>(R.id.recycle2)
         var productos = ArrayList<ProductosCardView>()
 
-        productos.add(ProductosCardView("Huawei Mate 30 Pro 256GB 8GB RAM Plata","S/ 4,599.00","3299",R.drawable.huaweimate,"ANDROID 10"))
-        productos.add(ProductosCardView("Huawei P40 128GB 8GB AZUL","S/ 2,699.00","2399",R.drawable.huaweip40,"ANDROID 10"))
-        productos.add(ProductosCardView("Huawei P30 Pro 256GB-Black","S/ 3,999.00","2799",R.drawable.huaweip30,"ANDROID 10"))
-        productos.add(ProductosCardView("HUAWEI Y9A 128gb 6gb Ram Dual Sim","S/ 1,299.00","1250",R.drawable.huaweiy9,"ANDROID 10"))
+        productos.add(ProductosCardView("Huawei Mate 30 Pro 256GB 8GB RAM Plata","S/ 4,599.00","3299",R.drawable.huaweimate,"ANDROID 10",false))
+        productos.add(ProductosCardView("Huawei P40 128GB 8GB AZUL","S/ 2,699.00","2399",R.drawable.huaweip40,"ANDROID 10",false))
+        productos.add(ProductosCardView("Huawei P30 Pro 256GB-Black","S/ 3,999.00","2799",R.drawable.huaweip30,"ANDROID 10",false))
+        productos.add(ProductosCardView("HUAWEI Y9A 128gb 6gb Ram Dual Sim","S/ 1,299.00","1250",R.drawable.huaweiy9,"ANDROID 10",false))
         var adapter = ProductosAdapterCV(productos)
 
         //recyclerView.layoutManager = LinearLayoutManager(root.context,LinearLayoutManager.VERTICAL,false)
@@ -50,5 +50,4 @@ class Huawei : Fragment() {
         super.onActivityCreated(savedInstanceState)
 
     }
-
 }

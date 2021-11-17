@@ -13,5 +13,6 @@
 
     <string name="nombre">%1$s</string>
     <string name="descripcion">%1$s</string>
+    <string name="precio1">%1$s</string>
     <string name="precio2">%1$s</string>
 </resources>

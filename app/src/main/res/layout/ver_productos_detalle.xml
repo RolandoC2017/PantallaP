@@ -85,6 +85,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
                 android:padding="5dp"
                 android:background="@drawable/boton_gris"
                 android:orientation="horizontal">
@@ -116,15 +117,43 @@
                     android:text="+"
                     android:textColor="@color/black"/>
             </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:background="@color/white"
+            android:layout_marginTop="5dp"
+            android:padding="8dp"
+            android:orientation="horizontal">
             <Button
                 android:id="@+id/btnCarrito"
-                android:layout_width="100dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
                 android:backgroundTint="@color/orange"
                 android:text="CARRITO"
                 android:layout_height="wrap_content"/>
+
+            <CheckBox
+                android:id="@+id/advFavorito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:layout_marginLeft="80dp"
+                android:button="@drawable/selector_ic_favorito_item"
+                app:useMaterialThemeColors="false"/>
+            <Button
+                android:id="@+id/btnFavorito"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/orange"
+                android:text="FAVORITO"
+                android:layout_height="wrap_content"/>
+
         </LinearLayout>
+
     </LinearLayout>
     </ScrollView>
 
