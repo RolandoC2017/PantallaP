@@ -6,8 +6,8 @@ import android.view.MenuItem
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import com.example.pantallap.BD.Conexion
 import kotlinx.android.synthetic.main.ver_productos_detalle.*
+import com.example.pantallap.BD.Conexion
 import com.example.pantallap.LlamarFragment
 import com.example.pantallap.Data.ProductosCardView
 import com.example.pantallap.R
@@ -17,21 +17,20 @@ class VerProductosDetalle : AppCompatActivity() {
     lateinit var producto : ProductosCardView
 
         override fun onCreate(savedInstanceState: Bundle?) {
-            super.onCreate(savedInstanceState)
-            setContentView(R.layout.ver_productos_detalle)
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.ver_productos_detalle)
 
-            var toolbar = findViewById<Toolbar>(R.id.toolbar)
-            setSupportActionBar(toolbar)
-            supportActionBar?.setDisplayHomeAsUpEnabled(true)
-            supportActionBar?.setDisplayShowHomeEnabled(true)
+        var toolbar = findViewById<Toolbar>(R.id.toolbar)
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayShowHomeEnabled(true)
 
-            producto = intent.getSerializableExtra("pro") as ProductosCardView
+             producto = intent.getSerializableExtra("pro") as ProductosCardView
 
-            advImagen.setImageResource(producto.imagen)
-            advNombre.text = getString(R.string.nombre, producto.nombre)
-            advDescripcion.text = getString(R.string.descripcion, producto.descripcion)
-            advPrecio.text = getString(R.string.precio2, producto.precio2).toDouble().toString()
-            //advFavorito.isChecked = producto.favorito
+                advImagen.setImageResource(producto.imagen)
+                advNombre.text = getString(R.string.nombre, producto.nombre)
+                advDescripcion.text = getString(R.string.descripcion, producto.descripcion)
+                advPrecio.text = getString(R.string.precio2, producto.precio2).toDouble().toString()
 
         val cantidad = findViewById<EditText>(R.id.cantidad)
         val precio = findViewById<TextView>(R.id.advPrecio)
@@ -50,16 +49,13 @@ class VerProductosDetalle : AppCompatActivity() {
 
             var conexion = Conexion(this)
             var  db = conexion.writableDatabase
-
-            btnCarrito.setOnClickListener {
-            db.execSQL("Insert into BDcarrito(nombre, precio1, precio2, imagen,cantidad) values('"+producto.nombre+"',"+producto.precio2+","+precio.text.toString()+","+producto.imagen+","+cantidad.text.toString()+")")
+        btnCarrito.setOnClickListener {
+            db.execSQL("Insert into prueba1(nombre, precio1, precio2, imagen, cantidad) values('"+producto.nombre+"',"+producto.precio2+","+precio.text.toString()+","+producto.imagen+","+cantidad.text.toString()+")")
             Toast.makeText(this, "Producto Añadido al carrito", Toast.LENGTH_SHORT).show()
-        }
 
-            btnFavorito.setOnClickListener {
-                db.execSQL("Insert into BDFavoritos(nombre,precio1,precio2,imagen,descripcion) values('"+producto.nombre+"','"+producto.precio1+"',"+producto.precio2+","+producto.imagen+",'"+producto.descripcion+"')")
-                Toast.makeText(this, "Producto Añadido a favoritos", Toast.LENGTH_SHORT).show()
-            }
+            //var intent = Intent(this, LlamarFragment::class.java)
+            //startActivity(intent)
+        }
 
             val botonCar = findViewById<ImageButton>(R.id.toolbarCar)
             botonCar.setOnClickListener {

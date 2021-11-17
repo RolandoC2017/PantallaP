@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -25,6 +26,7 @@ class Carrito : Fragment() {
         val root = inflater.inflate(R.layout.fragment_carrito, container, false)
 
         var lista: RecyclerView = root.findViewById(R.id.listaCarrito)
+        var total:TextView=root.findViewById(R.id.idtotal)
 
         var listaProductos = ArrayList<itemCarrito>()
 
@@ -36,7 +38,10 @@ class Carrito : Fragment() {
             do {
                 listaProductos.add(
                     itemCarrito(respuesta.getString(1), respuesta.getString(2), respuesta.getString(3), respuesta.getInt(4), respuesta.getString(5))
+
                 )
+                total.text= (+respuesta.getString(3).toDouble()).toString()
+
             } while (respuesta.moveToNext())
         }
 
