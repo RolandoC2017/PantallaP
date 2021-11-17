@@ -8,7 +8,7 @@ class Conexion(var context: Context): SQLiteOpenHelper(context,"CarritoCompras",
 
     override fun onCreate(p0: SQLiteDatabase?) {
 
-        var tablaFavorito = "CREATE TABLE BDFavoritos(id Integer not null primary key autoincrement,nombre String,precio1 String,precio2 Double, imagen Integer,descripcion Text)"
+        var tablaFavorito = "CREATE TABLE BDFavoritos(id Integer not null primary key autoincrement,nombre String,precio1 String,precio2 Double, imagen Integer, descripcion Text)"
         p0?.execSQL(tablaFavorito)
 
         var tablaCarrito = "CREATE TABLE BDcarrito(id Integer not null primary key autoincrement,nombre String, precio1 Double, precio2 Double, imagen Integer, cantidad Integer)"
@@ -24,6 +24,18 @@ class Conexion(var context: Context): SQLiteOpenHelper(context,"CarritoCompras",
         val cantidad = db.delete("BDcarrito", "nombre='$Nombre'", null)
         if (cantidad != 0) {
             mensaje = "Producto Eliminado del Carrito"
+        } else {
+            mensaje = "No hay registros que eliminar"
+        }
+        return mensaje
+    }
+
+    fun eliminarF(Nombre: String): String {
+        var mensaje = ""
+        val db = this.writableDatabase
+        val cantidad = db.delete("BDFavoritos", "nombre='$Nombre'", null)
+        if (cantidad != 0) {
+            mensaje = "Producto Eliminado de favoritos"
         } else {
             mensaje = "No hay registros que eliminar"
         }

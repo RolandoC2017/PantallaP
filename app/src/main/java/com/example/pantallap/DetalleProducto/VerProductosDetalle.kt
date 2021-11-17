@@ -31,9 +31,11 @@ class VerProductosDetalle : AppCompatActivity() {
                 advNombre.text = getString(R.string.nombre, producto.nombre)
                 advDescripcion.text = getString(R.string.descripcion, producto.descripcion)
                 advPrecio.text = getString(R.string.precio2, producto.precio2).toDouble().toString()
+                advFavorito.isChecked = producto.favorito
 
         val cantidad = findViewById<EditText>(R.id.cantidad)
         val precio = findViewById<TextView>(R.id.advPrecio)
+        val favorito = findViewById<CheckBox>(R.id.advFavorito)
 
         btnmas.setOnClickListener {
             cantidad.setText((cantidad.text.toString().toInt() + 1).toString())
@@ -49,12 +51,26 @@ class VerProductosDetalle : AppCompatActivity() {
 
             var conexion = Conexion(this)
             var  db = conexion.writableDatabase
-        btnCarrito.setOnClickListener {
-            db.execSQL("Insert into prueba1(nombre, precio1, precio2, imagen, cantidad) values('"+producto.nombre+"',"+producto.precio2+","+precio.text.toString()+","+producto.imagen+","+cantidad.text.toString()+")")
-            Toast.makeText(this, "Producto Añadido al carrito", Toast.LENGTH_SHORT).show()
 
-            //var intent = Intent(this, LlamarFragment::class.java)
-            //startActivity(intent)
+            favorito.setOnCheckedChangeListener { buttonView, isChecked ->
+
+                if(isChecked){
+                    db.execSQL("Insert into BDFavoritos(nombre, precio1, precio2, imagen, descripcion) values('"+producto.nombre+"','"+producto.precio1+"',"+producto.precio2+","+producto.imagen+",'"+producto.descripcion+"')")
+                    Toast.makeText(this, "Producto Añadido a favoritos", Toast.LENGTH_SHORT).show()
+                }
+                else{
+                    Toast.makeText(this, "Producto Eliminado de favoritos", Toast.LENGTH_SHORT).show()
+                }
+            }
+
+        /*btnFavorito.setOnClickListener {
+            db.execSQL("Insert into BDFavoritos(nombre, precio1, precio2, imagen) values('"+producto.nombre+"','"+producto.precio1+"',"+producto.precio2+","+producto.imagen+")")
+            Toast.makeText(this, "Producto Añadido a favoritos", Toast.LENGTH_SHORT).show()
+        }*/
+
+        btnCarrito.setOnClickListener {
+            db.execSQL("Insert into BDcarrito(nombre, precio1, precio2, imagen, cantidad) values('"+producto.nombre+"',"+producto.precio2+","+precio.text.toString()+","+producto.imagen+","+cantidad.text.toString()+")")
+            Toast.makeText(this, "Producto Añadido al carrito", Toast.LENGTH_SHORT).show()
         }
 
             val botonCar = findViewById<ImageButton>(R.id.toolbarCar)

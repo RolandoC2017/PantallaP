@@ -1,4 +1,4 @@
-package com.example.pantallap
+package com.example.pantallap.Favorito
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.pantallap.Adapters.FavoritoAdapter
 import com.example.pantallap.BD.Conexion
 import com.example.pantallap.Data.itemFavorito
+import com.example.pantallap.R
 
 class VerFavoritos : Fragment() {
 
@@ -33,7 +34,7 @@ class VerFavoritos : Fragment() {
        if (respuesta.moveToFirst()) {
             do {
                 listaFavoritos.add(
-                    itemFavorito(respuesta.getString(1),respuesta.getString(2),respuesta.getString(3),respuesta.getInt(4))
+                    itemFavorito(respuesta.getString(1),respuesta.getString(2),respuesta.getString(3),respuesta.getInt(4),respuesta.getString(5))
                 )
             } while (respuesta.moveToNext())
         }
