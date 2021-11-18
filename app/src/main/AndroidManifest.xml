@@ -12,8 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PantallaP">
         <activity
-            android:name=".Favoritos"
-            android:exported="true" />
+            android:name=".Registro_Login"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".DetalleFavorito.VerDetalleFavorito"
+            android:exported="false" />
         <activity
             android:name=".LlamarFragment"
             android:exported="true" />

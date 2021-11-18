@@ -17,19 +17,20 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <Button
+            android:id="@+id/iniciarSesion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="INICIAR SESION"
             android:background="@drawable/boton_redondo"
             />
 
-        <Button
+        <!--<Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="REGISTRATE"
             android:layout_marginLeft="5dp"
             android:background="@drawable/boton_redondo_claro"
-            />
+            />-->
 
     </LinearLayout>
 

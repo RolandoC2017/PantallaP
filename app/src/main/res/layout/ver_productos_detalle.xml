@@ -144,13 +144,6 @@
                 android:layout_marginLeft="80dp"
                 android:button="@drawable/selector_ic_favorito_item"
                 app:useMaterialThemeColors="false"/>
-            <Button
-                android:id="@+id/btnFavorito"
-                android:layout_width="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="@color/orange"
-                android:text="FAVORITO"
-                android:layout_height="wrap_content"/>
 
         </LinearLayout>
 

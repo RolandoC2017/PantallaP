@@ -15,6 +15,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.pantallap.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
+import kotlinx.android.synthetic.main.nav_header_main.*
 import kotlinx.android.synthetic.main.toolbar.*
 
 class MainActivity : AppCompatActivity() {
@@ -53,6 +54,12 @@ class MainActivity : AppCompatActivity() {
             var intent = Intent(this, LlamarFragment::class.java)
             startActivity(intent)
         }
+
+        iniciarSesion.setOnClickListener {
+            var intent = Intent(this, Login::class.java)
+            startActivity(intent)
+        }
+
 
 
     }

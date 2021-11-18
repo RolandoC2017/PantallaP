@@ -40,8 +40,6 @@ class CarritoAdapter(val carritos:ArrayList<itemCarrito>):RecyclerView.Adapter<C
             val numCarrito=itemView.findViewById<TextView>(R.id.toolbarIndicator)
                 //numCarrito.text= itemCount.toInt().toString()
 
-
-
             cantidad.setText(carrito.cantidad)
             precio2.text = carrito.precio2.toDouble().toString()
 
