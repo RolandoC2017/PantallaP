@@ -2,7 +2,9 @@ package com.example.pantallap
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -16,6 +18,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.pantallap.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.nav_header_main.*
+import kotlinx.android.synthetic.main.nav_header_main.view.*
 import kotlinx.android.synthetic.main.toolbar.*
 
 class MainActivity : AppCompatActivity() {
@@ -43,20 +46,16 @@ class MainActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.nav_principal, R.id.nav_celular, R.id.nav_pc, R.id.nav_componente,
-                R.id.nav_shop, R.id.nav_favoritos
+                R.id.nav_shop, R.id.nav_favoritos, R.id.nav_cuenta
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
         val botonCar = findViewById<ImageButton>(R.id.toolbarCar)
+
         botonCar.setOnClickListener {
             var intent = Intent(this, LlamarFragment::class.java)
-            startActivity(intent)
-        }
-
-        iniciarSesion.setOnClickListener {
-            var intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
     }

@@ -16,4 +16,5 @@
     <color name="morado_300">#976EDF</color>
     <color name="morado_500">#6743A5</color>
     <color name="principal">#1d1c1c</color>
+    <color name="colorAccent">#80FFC4</color>
 </resources>

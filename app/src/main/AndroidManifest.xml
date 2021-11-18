@@ -16,7 +16,7 @@
             android:exported="false" />
         <activity
             android:name=".Login"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".DetalleFavorito.VerDetalleFavorito"
             android:exported="false" />
