@@ -8,6 +8,7 @@ import android.view.MenuItem
 import android.widget.*
 import androidx.appcompat.widget.Toolbar
 import com.example.pantallap.BD.Conexion
+import com.example.pantallap.MainActivity
 import com.example.pantallap.R
 import com.google.android.material.textfield.TextInputEditText
 import kotlinx.android.synthetic.main.activity_registro_login.*
@@ -16,11 +17,6 @@ class Registro_Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro_login)
-
-        var toolbar = findViewById<Toolbar>(R.id.toolbar)
-        setSupportActionBar(toolbar)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.setDisplayShowHomeEnabled(true)
 
         btnLogRegister.setOnClickListener {
             startActivity(Intent(this, Login::class.java))
@@ -32,6 +28,7 @@ class Registro_Login : AppCompatActivity() {
         val email = findViewById<TextInputEditText>(R.id.email)
         val password = findViewById<TextInputEditText>(R.id.password)
         val registrar = findViewById<Button>(R.id.Registro)
+        val salir = findViewById<ImageButton>(R.id.btnSalir)
 
         var conexion = Conexion(this)
         var  db = conexion.writableDatabase
@@ -63,17 +60,16 @@ class Registro_Login : AppCompatActivity() {
                 Toast.makeText(this, "Debes llenar todos los Campos", Toast.LENGTH_SHORT).show()
             }
         }
+
+        salir.setOnClickListener {
+            var intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 
     /*override fun onBackPressed() {
         super.onBackPressed()
         overridePendingTransition(R.anim.slide_from_left,R.anim.slide_to_right)
     }*/
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if(item.itemId == android.R.id.home){
-            finish()
-        }
-        return super.onOptionsItemSelected(item)
-    }
 }

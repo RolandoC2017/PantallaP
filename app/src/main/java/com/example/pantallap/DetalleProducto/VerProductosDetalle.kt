@@ -1,6 +1,7 @@
 package com.example.pantallap.DetalleProducto
 
 import android.content.Intent
+import android.database.Cursor
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.*
@@ -53,24 +54,38 @@ class VerProductosDetalle : AppCompatActivity() {
             var  db = conexion.writableDatabase
 
             favorito.setOnCheckedChangeListener { buttonView, isChecked ->
+                var sql = "select * from BDFavoritos where nombre = '"+producto.nombre+"'"
+                var respuesta : Cursor = db.rawQuery(sql, null)
 
                 if(isChecked){
+                    if(respuesta.count == 0){
                     db.execSQL("Insert into BDFavoritos(nombre, precio1, precio2, imagen, descripcion) values('"+producto.nombre+"','"+producto.precio1+"',"+producto.precio2+","+producto.imagen+",'"+producto.descripcion+"')")
                     Toast.makeText(this, "Producto Añadido a favoritos", Toast.LENGTH_SHORT).show()
+                    }
+                    else if(respuesta.count == 1){
+                        Toast.makeText(this, "Producto ya existe", Toast.LENGTH_SHORT).show()
+                    }else{
+                        Toast.makeText(this, "ERROR", Toast.LENGTH_SHORT).show()
+                    }
                 }
                 else{
                     Toast.makeText(this, "Producto Eliminado de favoritos", Toast.LENGTH_SHORT).show()
                 }
             }
 
-        /*btnFavorito.setOnClickListener {
-            db.execSQL("Insert into BDFavoritos(nombre, precio1, precio2, imagen) values('"+producto.nombre+"','"+producto.precio1+"',"+producto.precio2+","+producto.imagen+")")
-            Toast.makeText(this, "Producto Añadido a favoritos", Toast.LENGTH_SHORT).show()
-        }*/
-
         btnCarrito.setOnClickListener {
-            db.execSQL("Insert into BDcarrito(nombre, precio1, precio2, imagen, cantidad) values('"+producto.nombre+"',"+producto.precio2+","+precio.text.toString()+","+producto.imagen+","+cantidad.text.toString()+")")
-            Toast.makeText(this, "Producto Añadido al carrito", Toast.LENGTH_SHORT).show()
+            var sql = "select * from BDcarrito where nombre = '"+producto.nombre+"'"
+            var respuesta : Cursor = db.rawQuery(sql, null)
+
+            if(respuesta.count == 0){
+                db.execSQL("Insert into BDcarrito(nombre, precio1, precio2, imagen, cantidad) values('"+producto.nombre+"',"+producto.precio2+","+precio.text.toString()+","+producto.imagen+","+cantidad.text.toString()+")")
+                Toast.makeText(this, "Producto Añadido al carrito", Toast.LENGTH_SHORT).show()
+            }
+            else if(respuesta.count == 1){
+                Toast.makeText(this, "Producto ya existe", Toast.LENGTH_SHORT).show()
+            }else{
+                Toast.makeText(this, "ERROR", Toast.LENGTH_SHORT).show()
+            }
         }
 
             val botonCar = findViewById<ImageButton>(R.id.toolbarCar)

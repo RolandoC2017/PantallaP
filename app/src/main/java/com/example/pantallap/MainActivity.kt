@@ -57,26 +57,40 @@ class MainActivity : AppCompatActivity() {
 
         val botonCar = findViewById<ImageButton>(R.id.toolbarCar)
         val bienvenido = navView.getHeaderView(0).findViewById<TextView>(R.id.tbienvenido)
+        val iniciarS = navView.getHeaderView(0).findViewById<Button>(R.id.btnLogin)
 
         var usuario = intent.getSerializableExtra("user") as itemUsuario?
 
         var Mmenu = navView.menu
         var favorito : MenuItem = Mmenu.findItem(R.id.nav_favoritos)
         var carrito : MenuItem = Mmenu.findItem(R.id.nav_shop)
+        var cuenta : MenuItem = Mmenu.findItem(R.id.nav_cuenta)
         var cerrarS : MenuItem = Mmenu.findItem(R.id.nav_cerrar)
 
         favorito.setVisible(false)
         carrito.setVisible(false)
+        cerrarS.setVisible(false)
+        cuenta.setVisible(false)
+        iniciarS.visibility = Button.VISIBLE
 
         if (usuario != null) {
             bienvenido.text = getString(R.string.nombreU, usuario.nombreU)
             favorito.setVisible(true)
             carrito.setVisible(true)
+            cerrarS.setVisible(true)
+            cuenta.setVisible(true)
+            iniciarS.visibility = Button.INVISIBLE
         }
 
         botonCar.setOnClickListener {
             var intent = Intent(this, LlamarFragment::class.java)
             startActivity(intent)
+        }
+
+        iniciarS.setOnClickListener {
+            var intent = Intent(this, Login::class.java)
+            startActivity(intent)
+            overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
         }
     }
 

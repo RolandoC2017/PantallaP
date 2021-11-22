@@ -47,4 +47,8 @@
         android:label="fragment_cuenta"
         tools:layout="@layout/fragment_cuenta" />
 
+    <activity
+        android:id="@+id/nav_cerrar"
+        android:name="com.example.pantallap.inicio"
+        tools:layout="@layout/activity_inicio"/>
 </navigation>
