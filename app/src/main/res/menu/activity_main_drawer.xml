@@ -11,18 +11,26 @@
         <item
             android:id="@+id/nav_celular"
             android:icon="@drawable/ic_celular"
-            android:title="Celulares y Smartphones" />
+            android:title="Smartphones y Tablets" />
         <item
             android:id="@+id/nav_pc"
             android:icon="@drawable/ic_pc"
-            android:title="PC" />
+            android:title="PC y Laptops" />
+        <item
+            android:id="@+id/nav_smartwatch"
+            android:icon="@drawable/ic_componente"
+            android:title="Smartwatch" />
+        <item
+            android:id="@+id/nav_realidadvirtual"
+            android:icon="@drawable/ic_componente"
+            android:title="Realidad Virtual" />
         <item
             android:id="@+id/nav_componente"
             android:icon="@drawable/ic_componente"
-            android:title="Componentes" />
+            android:title="Componentes de PC" />
     </group>
 
-    <item android:title="Favoritos">
+    <item android:title="Gestion">
         <menu>
                 <item
                     android:id="@+id/nav_favoritos"

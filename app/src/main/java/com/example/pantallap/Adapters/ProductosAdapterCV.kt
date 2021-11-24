@@ -1,6 +1,7 @@
 package com.example.pantallap.Adapters
 
 import android.content.Intent
+import android.graphics.Paint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -22,7 +23,7 @@ class ProductosAdapterCV(val productos:ArrayList<ProductosCardView>):RecyclerVie
     }
 
     override fun onBindViewHolder(holder: ProductosAdapterCV.ViewHolder, position: Int) {
-        holder.bindItems(productos[position],position)
+        holder.bindItems(productos[position])
     }
 
     override fun getItemCount(): Int {
@@ -31,12 +32,14 @@ class ProductosAdapterCV(val productos:ArrayList<ProductosCardView>):RecyclerVie
 
     inner class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView) {
 
-        fun bindItems(producto: ProductosCardView,position: Int) {
+        fun bindItems(producto: ProductosCardView) {
             val nombre = itemView.findViewById<TextView>(R.id.nombre)
             val precio1 = itemView.findViewById<TextView>(R.id.precio1)
             val precio2 = itemView.findViewById<TextView>(R.id.precio2)
             val imagen = itemView.findViewById<ImageView>(R.id.imagen)
             val favorito = itemView.findViewById<CheckBox>(R.id.favorito)
+
+            precio1.setPaintFlags(precio2.getPaintFlags() or Paint.STRIKE_THRU_TEXT_FLAG)
 
             nombre.text = producto.nombre
             precio1.text = producto.precio1

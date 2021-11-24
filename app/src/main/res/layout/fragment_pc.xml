@@ -5,15 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.slideshow.SlideshowFragment">
+    tools:context=".ui.pc.SlideshowFragment">
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:theme="@style/Theme.Transparent"
+        app:tabIconTintMode="multiply"
+        app:tabIconTint="#ffffff"
         app:tabGravity="center"
         app:tabBackground="@color/white"
-        app:tabTextColor="@color/black"/>
+        app:tabTextAppearance="@style/MyTabLayoutPC"
+        app:tabSelectedTextColor="@color/purple_700"/>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewp1"

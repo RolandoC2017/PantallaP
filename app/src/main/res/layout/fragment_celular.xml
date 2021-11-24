@@ -17,8 +17,7 @@
         app:tabGravity="center"
         app:tabBackground="@color/white"
         app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
-        app:tabSelectedTextColor="@color/purple_700"
-        app:tabTextColor="@color/principal" />
+        app:tabSelectedTextColor="@color/purple_700"/>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewp1"

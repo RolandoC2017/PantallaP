@@ -1,4 +1,4 @@
-package com.example.pantallap.ui.celular
+package com.example.pantallap.ui.pc
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,24 +7,25 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
+import androidx.lifecycle.ViewModelProvider
 import androidx.viewpager.widget.ViewPager
+import com.example.pantallap.Pc.*
 import com.example.pantallap.R
 import com.example.pantallap.Telefono.*
-import com.example.pantallap.databinding.FragmentCelularBinding
-import com.google.android.material.navigation.NavigationView
+import com.example.pantallap.databinding.FragmentPcBinding
+import com.example.pantallap.ui.celular.GalleryFragment
 import com.google.android.material.tabs.TabLayout
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.nav_header_main.*
-import kotlinx.android.synthetic.main.nav_header_main.view.*
 
-class GalleryFragment : Fragment() {
+class SlideshowFragment : Fragment() {
 
     private lateinit var pestañas: TabLayout
     private lateinit var viewPager: ViewPager
     private lateinit var adapter: PagerAdapter
 
-    private var _binding: FragmentCelularBinding? = null
+    private var _binding: FragmentPcBinding? = null
 
+    // This property is only valid between onCreateView and
+    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -33,23 +34,23 @@ class GalleryFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentCelularBinding.inflate(inflater, container, false)
+        _binding = FragmentPcBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         pestañas = root.findViewById(R.id.tab1)
         viewPager = root.findViewById(R.id.viewp1)
 
-        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.apple).setText("Apple"))
-        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.huawei).setText("Huawei"))
-        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.lg).setText("LG"))
-        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.motorola).setText("Motorola"))
-        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.samsung).setText("Samsung"))
-        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.xiaomi).setText("Xiaomi"))
+        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.hp).setText("hp"))
+        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.dell).setText("Dell"))
+        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.lenovo).setText("Lenovo"))
+        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.acer).setText("Acer"))
+        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.asus).setText("Asus"))
+
         adapter = PagerAdapter(childFragmentManager, pestañas.getTabCount())
         viewPager.setAdapter(adapter)
         viewPager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(pestañas))
 
-        pestañas.tabMode = TabLayout.MODE_SCROLLABLE
+        //pestañas.tabMode = TabLayout.MODE_SCROLLABLE
 
         pestañas.setOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab) {
@@ -68,12 +69,11 @@ class GalleryFragment : Fragment() {
         override fun getItem(position: Int): Fragment {
             var fragment: Fragment? = null
             when (position) {
-                0 -> fragment = Apple()
-                1 -> fragment = Huawei()
-                2 -> fragment = LG()
-                3 -> fragment = Motorola()
-                4 -> fragment = Samsung()
-                5 -> fragment = Xiaomi()
+                0 -> fragment = Hp()
+                1 -> fragment = Dell()
+                2 -> fragment = Lenovo()
+                3 -> fragment = Acer()
+                4 -> fragment = Asus()
             }
             return fragment!!
         }
@@ -87,4 +87,3 @@ class GalleryFragment : Fragment() {
         _binding = null
     }
 }
-

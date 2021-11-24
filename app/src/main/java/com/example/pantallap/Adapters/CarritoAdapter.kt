@@ -1,12 +1,14 @@
 package com.example.pantallap.Adapters
 
-import android.content.Intent
+import android.graphics.Paint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import androidx.lifecycle.LiveData
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pantallap.BD.Conexion
+import com.example.pantallap.Carrito.Carrito
 import com.example.pantallap.R
 import com.example.pantallap.Data.itemCarrito
 
@@ -37,13 +39,13 @@ class CarritoAdapter(val carritos:ArrayList<itemCarrito>):RecyclerView.Adapter<C
             val imagen = itemView.findViewById<ImageView>(R.id.imagenCarrito)
             val btnEliminar = itemView.findViewById<ImageButton>(R.id.btnEliminar)
 
-            var total = itemView.findViewById<TextView>(R.id.idtotal)
-            val numCarrito=itemView.findViewById<TextView>(R.id.toolbarIndicator)
+            //val numCarrito=itemView.findViewById<TextView>(R.id.toolbarIndicator)
                 //numCarrito.text= itemCount.toInt().toString()
 
             cantidad.setText(carrito.cantidad)
             precio2.text = carrito.precio2.toDouble().toString()
-            //total.text += carrito.precio2
+
+            precio1.setPaintFlags(precio2.getPaintFlags() or Paint.STRIKE_THRU_TEXT_FLAG)
 
             nombre.text = itemView.context.getString(R.string.nombre, carrito.nombre)
             precio1.text = itemView.context.getString(R.string.precio2, carrito.precio1).toDouble().toString()
@@ -52,8 +54,9 @@ class CarritoAdapter(val carritos:ArrayList<itemCarrito>):RecyclerView.Adapter<C
 
             btnEliminar.setOnClickListener {
                 /* ELIMINAR ITEM DEL CARRITO */
-                carritos.removeAt(position)
+                listacarrito.removeAt(position)
                 notifyItemRemoved(position)
+                getTotalFee()
                 notifyItemRangeChanged(position,listacarrito.size)
                 notifyDataSetChanged()
 
@@ -64,5 +67,13 @@ class CarritoAdapter(val carritos:ArrayList<itemCarrito>):RecyclerView.Adapter<C
                 Toast.makeText(itemView.context, mensaje, Toast.LENGTH_SHORT).show()
             }
         }
+    }
+
+    fun getTotalFee(): Double {
+        var fee = 0.0
+        for (i in 0 until listacarrito.size) {
+            fee = fee + listacarrito[i].precio2.toString().toDouble()
+        }
+        return fee
     }
 }

@@ -19,9 +19,9 @@
 
     <fragment
         android:id="@+id/nav_pc"
-        android:name="com.example.pantallap.ui.slideshow.SlideshowFragment"
+        android:name="com.example.pantallap.ui.pc.SlideshowFragment"
         android:label="PC"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_pc" />
 
     <fragment
         android:id="@+id/nav_componente"

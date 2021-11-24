@@ -1,6 +1,7 @@
 package com.example.pantallap.Adapters
 
 import android.content.Intent
+import android.graphics.Paint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -38,6 +39,8 @@ class FavoritoAdapter(val favoritos:ArrayList<itemFavorito>): RecyclerView.Adapt
             val precio2 = itemView.findViewById<TextView>(R.id.precio2)
             val imagen = itemView.findViewById<ImageView>(R.id.imagen)
             val corazon = itemView.findViewById<CheckBox>(R.id.favorito)
+
+            precio1.setPaintFlags(precio2.getPaintFlags() or Paint.STRIKE_THRU_TEXT_FLAG)
 
             nombre.text = itemView.context.getString(R.string.nombre, favorito.nombre)
             precio1.text = itemView.context.getString(R.string.precio1, favorito.precio1)
