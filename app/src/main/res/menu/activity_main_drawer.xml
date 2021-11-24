@@ -18,16 +18,20 @@
             android:title="PC y Laptops" />
         <item
             android:id="@+id/nav_smartwatch"
-            android:icon="@drawable/ic_componente"
+            android:icon="@drawable/ic_smartwatch"
             android:title="Smartwatch" />
         <item
             android:id="@+id/nav_realidadvirtual"
-            android:icon="@drawable/ic_componente"
+            android:icon="@drawable/ic_realidadv"
             android:title="Realidad Virtual" />
         <item
             android:id="@+id/nav_componente"
             android:icon="@drawable/ic_componente"
             android:title="Componentes de PC" />
+        <item
+            android:id="@+id/nav_zonagamer"
+            android:icon="@drawable/ic_zonagamer"
+            android:title="Zona Gamer" />
     </group>
 
     <item android:title="Gestion">

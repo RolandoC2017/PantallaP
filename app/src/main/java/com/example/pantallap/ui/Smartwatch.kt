@@ -1,53 +1,45 @@
-package com.example.pantallap.ui.pc
+package com.example.pantallap.ui
 
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager.widget.ViewPager
-import com.example.pantallap.Pc.*
+import com.example.pantallap.Smartwatch.*
 import com.example.pantallap.R
-import com.example.pantallap.databinding.FragmentPcBinding
+import com.example.pantallap.ui.Smartwatch
 import com.google.android.material.tabs.TabLayout
 
-class SlideshowFragment : Fragment() {
+class Smartwatch : Fragment() {
 
     private lateinit var pestañas: TabLayout
     private lateinit var viewPager: ViewPager
     private lateinit var adapter: PagerAdapter
 
-    private var _binding: FragmentPcBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
-
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
-        _binding = FragmentPcBinding.inflate(inflater, container, false)
-        val root: View = binding.root
-
+        // Inflate the layout for this fragment
+        val root = inflater.inflate(R.layout.fragment_smartwatch, container, false)
         pestañas = root.findViewById(R.id.tab1)
         viewPager = root.findViewById(R.id.viewp1)
 
-        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.hp).setText("hp"))
-        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.dell).setText("Dell"))
-        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.lenovo).setText("Lenovo"))
-        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.acer).setText("Acer"))
-        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.asus).setText("Asus"))
+        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.amazfit).setText("Amazfit"))
+        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.haylou).setText("Haylou"))
+        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.huawei).setText("Huawei"))
+        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.honor).setText("Honor"))
+        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.xiaomi).setText("Xiaomi"))
+        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.lenovo).setText("lenovo"))
 
         adapter = PagerAdapter(childFragmentManager, pestañas.getTabCount())
         viewPager.setAdapter(adapter)
         viewPager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(pestañas))
 
-        //pestañas.tabMode = TabLayout.MODE_SCROLLABLE
+        pestañas.tabMode = TabLayout.MODE_SCROLLABLE
 
         pestañas.setOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab) {
@@ -66,11 +58,12 @@ class SlideshowFragment : Fragment() {
         override fun getItem(position: Int): Fragment {
             var fragment: Fragment? = null
             when (position) {
-                0 -> fragment = Hp()
-                1 -> fragment = Dell()
-                2 -> fragment = Lenovo()
-                3 -> fragment = Acer()
-                4 -> fragment = Asus()
+                0 -> fragment = Amazfit()
+                1 -> fragment = Haylou()
+                2 -> fragment = Huawei()
+                3 -> fragment = Honor()
+                4 -> fragment = Xiaomi()
+                5 -> fragment = Lenovo()
             }
             return fragment!!
         }
@@ -78,9 +71,5 @@ class SlideshowFragment : Fragment() {
         override fun getCount(): Int {
             return numeroTab
         }
-    }
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
     }
 }

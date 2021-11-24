@@ -24,6 +24,12 @@
         tools:layout="@layout/fragment_pc" />
 
     <fragment
+        android:id="@+id/nav_smartwatch"
+        android:name="com.example.pantallap.ui.Smartwatch"
+        android:label="fragment_smartwatch"
+        tools:layout="@layout/fragment_smartwatch" />
+
+    <fragment
         android:id="@+id/nav_componente"
         android:name="com.example.pantallap.ui.componente.FragmentComponente"
         android:label="fragment_componente"
@@ -51,4 +57,5 @@
         android:id="@+id/nav_cerrar"
         android:name="com.example.pantallap.inicio"
         tools:layout="@layout/activity_inicio"/>
+
 </navigation>

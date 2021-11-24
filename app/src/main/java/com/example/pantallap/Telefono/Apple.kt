@@ -29,8 +29,7 @@ class Apple : Fragment() {
         var recyclerView: RecyclerView = root.findViewById<RecyclerView>(R.id.recycle)
         var productos = ArrayList<ProductosCardView>()
 
-        productos.add(
-            ProductosCardView("iPhone 11 128GB - Negro","S/ 4,599.00","3499",R.drawable.iphone11,
+        productos.add(ProductosCardView("iPhone 11 128GB - Negro","S/ 4,599.00","3499",R.drawable.iphone11,
             "CARACTERISTICAS DESTACADAS:\n" + "\n" +
                     "Pantalla LCD Multi-Touch de 6.1 pulgadas \n" +
                     "Chip A13 Bionic\n" +

@@ -45,8 +45,6 @@ class CarritoAdapter(val carritos:ArrayList<itemCarrito>):RecyclerView.Adapter<C
             cantidad.setText(carrito.cantidad)
             precio2.text = carrito.precio2.toDouble().toString()
 
-            precio1.setPaintFlags(precio2.getPaintFlags() or Paint.STRIKE_THRU_TEXT_FLAG)
-
             nombre.text = itemView.context.getString(R.string.nombre, carrito.nombre)
             precio1.text = itemView.context.getString(R.string.precio2, carrito.precio1).toDouble().toString()
 

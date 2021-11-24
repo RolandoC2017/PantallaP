@@ -72,6 +72,11 @@
                     </RelativeLayout>
                 </LinearLayout>
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/publicidadhome"/>
+
                 <!-- *********************************************** -->
 
                 <TextView
@@ -84,86 +89,16 @@
                     android:textSize="20dp"
                     android:textStyle="bold" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:gravity="center"
-                    android:orientation="horizontal">
+            <!-- **************************************************************** -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclehome"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-                    <LinearLayout
-                        android:layout_width="195dp"
-                        android:layout_height="270dp"
-                        android:background="@color/white"
-                        android:orientation="vertical">
+            </androidx.recyclerview.widget.RecyclerView>
 
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="160dp"
-                            android:background="@drawable/laptop" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="5dp"
-                            android:text="Lenovo 15 FHD i7 11va Gen 512 SSD + 12gb"
-                            android:textColor="@color/black"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="S/ 4,550.00"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="10dp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="10dp"
-                            android:text="S/ 4,000.00"
-                            android:textColor="@color/red" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="195dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:background="@color/white"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="160dp"
-                            android:background="@drawable/laptop2" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="5dp"
-                            android:text="Macbook Pro 8GB DDR 256GB SSD 13.3"
-                            android:textColor="@color/black"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="S/ 4,960.00"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="10dp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="10dp"
-                            android:text="S/ 4300.00"
-                            android:textColor="@color/red" />
-                    </LinearLayout>
-                </LinearLayout>
-
-                <!-- *********************************************** -->
+            <!-- *********************************************** -->
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -258,86 +193,16 @@
                     android:textSize="20dp"
                     android:textStyle="bold" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:gravity="center"
-                    android:orientation="horizontal">
+            <!-- **************************************************************** -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclehome2"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-                    <LinearLayout
-                        android:layout_width="195dp"
-                        android:layout_height="270dp"
-                        android:background="@color/white"
-                        android:orientation="vertical">
+            </androidx.recyclerview.widget.RecyclerView>
 
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="160dp"
-                            android:background="@drawable/teclado1" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="5dp"
-                            android:text="Teclado micronics legacy FK-1002"
-                            android:textColor="@color/black"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="S/ 259.00"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="10dp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="10dp"
-                            android:text="S/ 200.00"
-                            android:textColor="@color/red" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="195dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
-                        android:background="@color/white"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="160dp"
-                            android:background="@drawable/teclado2" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="5dp"
-                            android:text="Teclado corseir K68 RGB MX RED"
-                            android:textColor="@color/black"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="S/ 259.00"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="10dp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="10dp"
-                            android:text="S/ 200.00"
-                            android:textColor="@color/red" />
-                    </LinearLayout>
-                </LinearLayout>
-
-                <!-- *********************************************** -->
+            <!-- *********************************************** -->
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
