@@ -48,8 +48,8 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_principal, R.id.nav_celular, R.id.nav_pc, R.id.nav_smartwatch, R.id.nav_componente,
-                R.id.nav_shop, R.id.nav_favoritos, R.id.nav_cuenta
+                R.id.nav_principal, R.id.nav_celular, R.id.nav_pc, R.id.nav_smartwatch,R.id.nav_realidadvirtual,
+                R.id.nav_componente, R.id.nav_zonagamer, R.id.nav_shop, R.id.nav_favoritos, R.id.nav_cuenta
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -58,8 +58,6 @@ class MainActivity : AppCompatActivity() {
         val botonCar = findViewById<ImageButton>(R.id.toolbarCar)
         val bienvenido = navView.getHeaderView(0).findViewById<TextView>(R.id.tbienvenido)
         val iniciarS = navView.getHeaderView(0).findViewById<Button>(R.id.btnLogin)
-
-        var usuario = intent.getSerializableExtra("user") as itemUsuario?
 
         var Mmenu = navView.menu
         var favorito : MenuItem = Mmenu.findItem(R.id.nav_favoritos)
@@ -72,6 +70,9 @@ class MainActivity : AppCompatActivity() {
         cerrarS.setVisible(false)
         cuenta.setVisible(false)
         iniciarS.visibility = Button.VISIBLE
+
+
+        var usuario = intent.getSerializableExtra("user") as itemUsuario?
 
         if (usuario != null) {
             bienvenido.text = getString(R.string.nombreU, usuario.nombreU)

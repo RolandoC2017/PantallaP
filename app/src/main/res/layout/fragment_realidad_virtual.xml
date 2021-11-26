@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.pc.SlideshowFragment">
+    tools:context=".ui.RealidadVirtual">
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab1"
@@ -15,8 +15,8 @@
         app:tabIconTintMode="multiply"
         app:tabIconTint="#ffffff"
         app:tabGravity="center"
-        app:tabPaddingStart="25dp"
-        app:tabPaddingEnd="25dp"
+        app:tabPaddingStart="23dp"
+        app:tabPaddingEnd="23dp"
         app:tabBackground="@color/white"
         app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
         app:tabSelectedTextColor="@color/purple_700"/>
@@ -25,4 +25,5 @@
         android:id="@+id/viewp1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
 </LinearLayout>

@@ -47,7 +47,7 @@ class SlideshowFragment : Fragment() {
         viewPager.setAdapter(adapter)
         viewPager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(pestañas))
 
-        //pestañas.tabMode = TabLayout.MODE_SCROLLABLE
+        pestañas.tabMode = TabLayout.MODE_SCROLLABLE
 
         pestañas.setOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab) {

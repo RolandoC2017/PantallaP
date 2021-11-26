@@ -1,4 +1,4 @@
-package com.example.pantallap.ui
+package com.example.pantallap.Componentes
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,12 +8,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager.widget.ViewPager
-import com.example.pantallap.Smartwatch.*
 import com.example.pantallap.R
-import com.example.pantallap.ui.Smartwatch
 import com.google.android.material.tabs.TabLayout
 
-class Smartwatch : Fragment() {
+class Procesadores : Fragment() {
+
+    companion object {
+        fun newInstance() = Procesadores()
+    }
 
     private lateinit var pestañas: TabLayout
     private lateinit var viewPager: ViewPager
@@ -24,23 +26,17 @@ class Smartwatch : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val root = inflater.inflate(R.layout.fragment_smartwatch, container, false)
+        val root = inflater.inflate(R.layout.procesadores, container, false)
 
         pestañas = root.findViewById(R.id.tab1)
         viewPager = root.findViewById(R.id.viewp1)
 
-        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.amazfit).setText("Amazfit"))
-        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.haylou).setText("Haylou"))
-        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.huawei).setText("Huawei"))
-        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.honor).setText("Honor"))
-        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.xiaomi).setText("Xiaomi"))
-        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.lenovo).setText("lenovo"))
+        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.amd).setText("AMD"))
+        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.intel).setText("Intel"))
 
         adapter = PagerAdapter(childFragmentManager, pestañas.getTabCount())
         viewPager.setAdapter(adapter)
         viewPager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(pestañas))
-
-        pestañas.tabMode = TabLayout.MODE_SCROLLABLE
 
         pestañas.setOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab) {
@@ -59,12 +55,8 @@ class Smartwatch : Fragment() {
         override fun getItem(position: Int): Fragment {
             var fragment: Fragment? = null
             when (position) {
-                0 -> fragment = Amazfit()
-                1 -> fragment = Haylou()
-                2 -> fragment = Huawei()
-                3 -> fragment = Honor()
-                4 -> fragment = Xiaomi()
-                5 -> fragment = Lenovo()
+                0 -> fragment = AMD()
+                1 -> fragment = Intel()
             }
             return fragment!!
         }

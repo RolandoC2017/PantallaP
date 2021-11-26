@@ -7,8 +7,11 @@ import android.view.MenuItem
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
 import kotlinx.android.synthetic.main.ver_productos_detalle.*
 import com.example.pantallap.BD.Conexion
+import com.example.pantallap.Carrito.Carrito
 import com.example.pantallap.LlamarFragment
 import com.example.pantallap.Data.ProductosCardView
 import com.example.pantallap.R

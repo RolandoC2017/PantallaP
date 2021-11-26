@@ -30,10 +30,22 @@
         tools:layout="@layout/fragment_smartwatch" />
 
     <fragment
+        android:id="@+id/nav_realidadvirtual"
+        android:name="com.example.pantallap.ui.RealidadVirtual"
+        android:label="fragment_realidad_virtual"
+        tools:layout="@layout/fragment_realidad_virtual" />
+
+    <fragment
         android:id="@+id/nav_componente"
         android:name="com.example.pantallap.ui.componente.FragmentComponente"
         android:label="fragment_componente"
         tools:layout="@layout/fragment_componente" />
+
+    <fragment
+        android:id="@+id/nav_zonagamer"
+        android:name="com.example.pantallap.ui.ZonaGamer"
+        android:label="fragment_zona_gamer"
+        tools:layout="@layout/fragment_zona_gamer" />
 
     <fragment
         android:id="@+id/nav_shop"

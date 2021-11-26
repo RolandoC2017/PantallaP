@@ -14,33 +14,57 @@
         <entry key="..\:/GitMoviles/PantallaP/app/src/main/res/layout/nav_header_main.xml" value="0.13333333333333333" />
         <entry key="..\:/GitMoviles/PantallaP/app/src/main/res/layout/toolbar.xml" value="0.536" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/drawable-hdpi/ic_login_bg.xml" value="0.2703125" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/drawable-hdpi/indicador.xml" value="0.2703125" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/acer.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_alerta_inicio.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_inicio.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_main.xml" value="0.11510416666666666" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_registro_login.xml" value="0.264" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/amazfit.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/amd.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/apple.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/asus.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/audifonos.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/camara_web.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/dell.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/disco_duro.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_carrito.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_celular.xml" value="0.2" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_componente.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_cuenta.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_home.xml" value="0.25443169968717416" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_pc.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_realidad_virtual.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_slideshow.xml" value="0.2" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_smartwatch.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_sony.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/fragment_zona_gamer.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/haylou.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/honor.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/hp.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/huawei_smartwatch.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/intel.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/item_carrito.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/lenovo.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/lenovo_smartwatch.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/lg.xml" value="0.2" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/memoria_r_a_m.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/monitores.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/mouse.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/nav_header_main.xml" value="0.264" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/oculus.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/otros.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/placas_base.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/procesadores.xml" value="0.11614583333333334" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/productoscardview.xml" value="0.4" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/silla_gamer.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/tarjeta_grafica.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/teclados.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/toolbar.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/ver_productos_detalle.xml" value="0.264" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/vrbox.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/vrshinecon.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/xiaomi_smartwatch.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/menu/activity_main_drawer.xml" value="0.4" />
         <entry key="..\:/Users/HP/.gradle/caches/transforms-3/a1ad1b515fec9f19b104a334f1f5a525/transformed/jetified-whynotimagecarousel-2.0.5/res/layout/item_carousel.xml" value="0.20416666666666666" />

@@ -8,12 +8,12 @@ import android.view.ViewGroup
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager.widget.ViewPager
-import com.example.pantallap.Smartwatch.*
 import com.example.pantallap.R
-import com.example.pantallap.ui.Smartwatch
+import com.example.pantallap.Smartwatch.*
+import com.example.pantallap.ZonaGamer.*
 import com.google.android.material.tabs.TabLayout
 
-class Smartwatch : Fragment() {
+class ZonaGamer : Fragment() {
 
     private lateinit var pestañas: TabLayout
     private lateinit var viewPager: ViewPager
@@ -24,17 +24,17 @@ class Smartwatch : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val root = inflater.inflate(R.layout.fragment_smartwatch, container, false)
+        val root = inflater.inflate(R.layout.fragment_zona_gamer, container, false)
 
         pestañas = root.findViewById(R.id.tab1)
         viewPager = root.findViewById(R.id.viewp1)
 
-        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.amazfit).setText("Amazfit"))
-        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.haylou).setText("Haylou"))
-        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.huawei).setText("Huawei"))
-        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.honor).setText("Honor"))
-        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.xiaomi).setText("Xiaomi"))
-        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.lenovo).setText("lenovo"))
+        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.sillagamer).setText("Sillas Gamers"))
+        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.teclado).setText("Teclados"))
+        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.mouse).setText("Mouse"))
+        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.audifono).setText("Audifonos"))
+        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.monitor).setText("Monitores"))
+        pestañas.addTab(pestañas.newTab().setIcon(R.drawable.camaraweb).setText("Camara Web"))
 
         adapter = PagerAdapter(childFragmentManager, pestañas.getTabCount())
         viewPager.setAdapter(adapter)
@@ -59,12 +59,12 @@ class Smartwatch : Fragment() {
         override fun getItem(position: Int): Fragment {
             var fragment: Fragment? = null
             when (position) {
-                0 -> fragment = Amazfit()
-                1 -> fragment = Haylou()
-                2 -> fragment = Huawei()
-                3 -> fragment = Honor()
-                4 -> fragment = Xiaomi()
-                5 -> fragment = Lenovo()
+                0 -> fragment = SillaGamer()
+                1 -> fragment = Teclados()
+                2 -> fragment = Mouse()
+                3 -> fragment = Audifonos()
+                4 -> fragment = Monitores()
+                5 -> fragment = CamaraWeb()
             }
             return fragment!!
         }

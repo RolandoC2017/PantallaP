@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/prueba_container"
     android:background="@color/plomo"
     tools:context=".ui.home.HomeFragment">
 
@@ -120,6 +121,7 @@
                         android:textStyle="bold" />
 
                     <RelativeLayout
+                        android:id="@+id/smartwatch_fragment"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center">
