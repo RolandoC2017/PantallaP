@@ -38,7 +38,7 @@ class Carrito : Fragment() {
         if (respuesta.moveToFirst()) {
             do {
                 listaProductos.add(
-                    itemCarrito(respuesta.getString(1), respuesta.getString(2), respuesta.getString(3), respuesta.getInt(4), respuesta.getString(5))
+                    itemCarrito(respuesta.getString(1), respuesta.getString(2), respuesta.getString(3), respuesta.getInt(4), respuesta.getString(5),respuesta.getInt(6))
                 )
 
             } while (respuesta.moveToNext())

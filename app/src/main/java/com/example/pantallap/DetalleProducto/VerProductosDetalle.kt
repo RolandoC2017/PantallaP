@@ -41,9 +41,11 @@ class VerProductosDetalle : AppCompatActivity() {
         val precio = findViewById<TextView>(R.id.advPrecio)
         val favorito = findViewById<CheckBox>(R.id.advFavorito)
 
+        val indicador = findViewById<TextView>(R.id.toolbarIndicator)
+
         btnmas.setOnClickListener {
             cantidad.setText((cantidad.text.toString().toInt() + 1).toString())
-            precio.setText((precio.text.toString().toDouble() + getString(R.string.precio2, producto.precio2).toDouble()).toString())
+            precio.setText((getString(R.string.precio2, producto.precio2).toDouble() * cantidad.text.toString().toInt()).toString())
         }
 
         btnmenos.setOnClickListener {
@@ -81,7 +83,8 @@ class VerProductosDetalle : AppCompatActivity() {
             var respuesta : Cursor = db.rawQuery(sql, null)
 
             if(respuesta.count == 0){
-                db.execSQL("Insert into BDcarrito(nombre, precio1, precio2, imagen, cantidad) values('"+producto.nombre+"',"+producto.precio2+","+precio.text.toString()+","+producto.imagen+","+cantidad.text.toString()+")")
+                indicador.setText((indicador.text.toString().toInt()+1).toString())
+                db.execSQL("Insert into BDcarrito(nombre, precio1, precio2, imagen, cantidad, indicador) values('"+producto.nombre+"',"+producto.precio2+","+precio.text.toString()+","+producto.imagen+","+cantidad.text.toString()+","+indicador.text.toString()+")")
                 Toast.makeText(this, "Producto Añadido al carrito", Toast.LENGTH_SHORT).show()
             }
             else if(respuesta.count == 1){

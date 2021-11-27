@@ -11,7 +11,7 @@ class Conexion(var context: Context): SQLiteOpenHelper(context,"CarritoCompras",
         var tablaFavorito = "CREATE TABLE BDFavoritos(id Integer not null primary key autoincrement,nombre String,precio1 String,precio2 Double, imagen Integer, descripcion Text)"
         p0?.execSQL(tablaFavorito)
 
-        var tablaCarrito = "CREATE TABLE BDcarrito(id Integer not null primary key autoincrement,nombre String, precio1 Double, precio2 Double, imagen Integer, cantidad Integer)"
+        var tablaCarrito = "CREATE TABLE BDcarrito(id Integer not null primary key autoincrement,nombre String, precio1 Double, precio2 Double, imagen Integer, cantidad Integer, indicador Integer)"
         p0?.execSQL(tablaCarrito)
 
         var tablaUsuario = "CREATE TABLE BDusuario(id Integer not null primary key autoincrement,nombre String, usuario String, email String, password String)"

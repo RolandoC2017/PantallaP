@@ -14,7 +14,10 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.pantallap.Adapters.CarritoAdapter
+import com.example.pantallap.BD.Conexion
 import com.example.pantallap.Data.ProductosCardView
+import com.example.pantallap.Data.itemCarrito
 import com.example.pantallap.Data.itemUsuario
 import com.example.pantallap.Login.Login
 import com.example.pantallap.databinding.ActivityMainBinding
@@ -37,10 +40,6 @@ class MainActivity : AppCompatActivity() {
 
         setSupportActionBar(toolbar)
 
-       /* binding.appBarMain.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }*/
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_main)
@@ -56,6 +55,7 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
 
         val botonCar = findViewById<ImageButton>(R.id.toolbarCar)
+
         val bienvenido = navView.getHeaderView(0).findViewById<TextView>(R.id.tbienvenido)
         val iniciarS = navView.getHeaderView(0).findViewById<Button>(R.id.btnLogin)
 
@@ -83,23 +83,18 @@ class MainActivity : AppCompatActivity() {
             iniciarS.visibility = Button.INVISIBLE
         }
 
-        botonCar.setOnClickListener {
-            var intent = Intent(this, LlamarFragment::class.java)
-            startActivity(intent)
-        }
-
         iniciarS.setOnClickListener {
             var intent = Intent(this, Login::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right)
         }
+
+        botonCar.setOnClickListener {
+            var intent = Intent(this, LlamarFragment::class.java)
+            startActivity(intent)
+        }
     }
 
-    /*override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.main, menu)
-        return true
-    }*/
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()

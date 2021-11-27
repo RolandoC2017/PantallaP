@@ -1,14 +1,11 @@
 package com.example.pantallap.Adapters
 
-import android.graphics.Paint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
-import androidx.lifecycle.LiveData
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pantallap.BD.Conexion
-import com.example.pantallap.Carrito.Carrito
 import com.example.pantallap.R
 import com.example.pantallap.Data.itemCarrito
 
@@ -37,10 +34,9 @@ class CarritoAdapter(val carritos:ArrayList<itemCarrito>):RecyclerView.Adapter<C
             val precio2 = itemView.findViewById<TextView>(R.id.precioCarrito2)
             val precio1 = itemView.findViewById<TextView>(R.id.precioCarrito1)
             val imagen = itemView.findViewById<ImageView>(R.id.imagenCarrito)
+            val btnmas = itemView.findViewById<Button>(R.id.btnmasItem)
+            val btnmenos = itemView.findViewById<Button>(R.id.btnmenosItem)
             val btnEliminar = itemView.findViewById<ImageButton>(R.id.btnEliminar)
-
-            //val numCarrito=itemView.findViewById<TextView>(R.id.toolbarIndicator)
-                //numCarrito.text= itemCount.toInt().toString()
 
             cantidad.setText(carrito.cantidad)
             precio2.text = carrito.precio2.toDouble().toString()
@@ -54,7 +50,6 @@ class CarritoAdapter(val carritos:ArrayList<itemCarrito>):RecyclerView.Adapter<C
                 /* ELIMINAR ITEM DEL CARRITO */
                 listacarrito.removeAt(position)
                 notifyItemRemoved(position)
-                getTotalFee()
                 notifyItemRangeChanged(position,listacarrito.size)
                 notifyDataSetChanged()
 
@@ -64,6 +59,23 @@ class CarritoAdapter(val carritos:ArrayList<itemCarrito>):RecyclerView.Adapter<C
                 val mensaje: String = db.eliminar(Nombre)
                 Toast.makeText(itemView.context, mensaje, Toast.LENGTH_SHORT).show()
             }
+
+            var conexion = Conexion(itemView.context)
+            var  db = conexion.writableDatabase
+
+            btnmas.setOnClickListener {
+                cantidad.setText((cantidad.text.toString().toInt() + 1).toString())
+                precio2.setText((precio1.text.toString().toDouble() * cantidad.text.toString().toInt()).toString())
+                db.execSQL("Update BDcarrito set precio2="+precio2.text.toString()+",cantidad="+cantidad.text.toString()+" where nombre='"+carrito.nombre+"'")
+            }
+
+            btnmenos.setOnClickListener {
+                if (cantidad.text.toString().toInt() > 1) {
+                    cantidad.setText((cantidad.text.toString().toInt() - 1).toString())
+                    precio2.setText((precio2.text.toString().toDouble() - precio1.text.toString().toDouble()).toString())
+                    db.execSQL("Update BDcarrito set precio2="+precio2.text.toString()+",cantidad="+cantidad.text.toString()+" where nombre='"+carrito.nombre+"'")
+                }
+            }
         }
     }
 
@@ -71,6 +83,13 @@ class CarritoAdapter(val carritos:ArrayList<itemCarrito>):RecyclerView.Adapter<C
         var fee = 0.0
         for (i in 0 until listacarrito.size) {
             fee = fee + listacarrito[i].precio2.toString().toDouble()
+        }
+        return fee
+    }
+    fun getIndicador(): Int {
+        var fee = 0
+        for (i in 0 until listacarrito.size) {
+            fee = fee + listacarrito[i].indicador.toString().toInt()
         }
         return fee
     }

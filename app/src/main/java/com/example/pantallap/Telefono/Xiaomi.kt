@@ -47,16 +47,16 @@ class Xiaomi : Fragment() {
                     "Versión de Android: 11.\n" +
                     "Capa de personalización: MIUI.",false))
 
-        productos.add(ProductosCardView("Xiaomi Poco M3 Pro 6GB 128GB 5G teléfono M2103K19PG - Negro","S/ 1,199.00","859",R.drawable.xiaomipocom3,
+        productos.add(ProductosCardView("Xiaomi Poco M3 Pro 6GB 128GB 5G telefono M2103K19PG - Negro","S/ 1,199.00","859",R.drawable.xiaomipocom3,
             "CARACTERISTICAS DESTACADAS:\n" + "\n" +
                     "CPU: CPU Dimensity 700 Octa Core, hasta 2.2GHz\n" +
-                    "Pantalla: 6.5' 2400x1080P FHD + DotDisplay, frecuencia de actualización de 90Hz\n" +
+                    "Pantalla: 6.5 2400x1080P FHD + DotDisplay, frecuencia de actualización de 90Hz\n" +
                     "RAM + ROM: 6GB + 128GB\n" +
                     "Cámara: cámara trasera triple de 48MP + 2MP + 2MP, cámara frontal de 8MP\n" +
                     "Batería: 5000 mAh (tipo), admite carga rápida de 18 W, cargador rápido de 22,5 W en la caja\n" +
                     "Sistema operativo: MIUI, versión global, compatible con varios idiomas y Google Play\n" +
                     "Otros: Wi-FI, Bluetooth 5.1, GPS, ID de huella digital, Desbloqueo facial AI, Conector para auriculares de 3,5 mm, IR Blaster, NFC\n" +
-                    "Red --- Netcom completo, doble SIM de doble modo de espera\n" +
+                    "Red Netcom completo, doble SIM de doble modo de espera\n" +
                     "5G: n1, n3, n7, n8, n20, n28, n38, n40, n41, n66, n77, n78\n" +
                     "4G: LTE FDD B1 / 2/3/4/5/7/8/12/17/20/28/32/66\n" +
                     "4G: LTE TDD B38 / 40/41\n" +

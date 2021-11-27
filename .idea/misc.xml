@@ -15,12 +15,16 @@
         <entry key="..\:/GitMoviles/PantallaP/app/src/main/res/layout/toolbar.xml" value="0.536" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/drawable-hdpi/ic_login_bg.xml" value="0.2703125" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/drawable-hdpi/indicador.xml" value="0.2703125" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/drawable/ic_favorito_border.xml" value="0.2703125" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/drawable/ic_favorito_selec.xml" value="0.2703125" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/drawable/selector_ic_favorito_item.xml" value="0.2703125" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/acer.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_alerta_inicio.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_inicio.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_main.xml" value="0.11510416666666666" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_registro_login.xml" value="0.264" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_ver_detalle_favorito.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/amazfit.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/amd.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/PantallaP/app/src/main/res/layout/apple.xml" value="0.25416666666666665" />
