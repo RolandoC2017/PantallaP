@@ -121,7 +121,7 @@
                         android:textStyle="bold" />
 
                     <RelativeLayout
-                        android:id="@+id/smartwatch_fragment"
+                        android:id="@+id/smart"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center">
@@ -142,6 +142,7 @@
                     </RelativeLayout>
 
                     <RelativeLayout
+                        android:id="@+id/realidad"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center">
@@ -162,6 +163,7 @@
                     </RelativeLayout>
 
                     <RelativeLayout
+                        android:id="@+id/compo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"

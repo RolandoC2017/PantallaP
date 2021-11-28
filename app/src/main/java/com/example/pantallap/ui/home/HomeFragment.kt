@@ -1,5 +1,6 @@
 package com.example.pantallap.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -15,11 +16,12 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.pantallap.*
 import com.example.pantallap.Adapters.ProductosAdapterCV
 import com.example.pantallap.Carrito.Carrito
 import com.example.pantallap.Data.ProductosCardView
-import com.example.pantallap.R
 import com.example.pantallap.databinding.FragmentHomeBinding
+import kotlinx.android.synthetic.main.fragment_home.*
 import org.imaginativeworld.whynotimagecarousel.ImageCarousel
 import org.imaginativeworld.whynotimagecarousel.model.CarouselItem
 
@@ -43,9 +45,9 @@ class HomeFragment : Fragment() {
 
         val carousel: ImageCarousel = root.findViewById(R.id.carousel)
 
-        list.add(CarouselItem("https://www.conclusion.com.ar/wp-content/uploads/2016/08/Celulares.jpg" ))
-        list.add(CarouselItem("https://1.bp.blogspot.com/-cOv9eNDantg/XsxoPhdWkgI/AAAAAAAAwZU/aLhqpzzbNO8iTy_IDh_NymmxPmJUDwjSwCLcBGAsYHQ/w1280-h720-p-k-no-nu/cuales-son-los-efectos-positivos-y-negativos-de-los-telefonos-celulares.jpg"))
-        list.add(CarouselItem("https://www.eltiempo.com/files/article_multimedia/uploads/2019/02/20/5c6df9cd1acc3.jpeg"))
+        list.add(CarouselItem("https://image.freepik.com/foto-gratis/tecnologia-nube-holograma-futurista-reloj-inteligente_53876-124625.jpg" ))
+        list.add(CarouselItem("https://niixer.com/wp-content/uploads/2021/08/PRINCIPAL-800x445.png"))
+        list.add(CarouselItem("https://maxitec.vteximg.com.br/arquivos/ids/161610/banner-category-celulares-accesorios.jpg?v=637500901022470000"))
         carousel.addData(list)
 
         var recyclerView: RecyclerView = root.findViewById<RecyclerView>(R.id.recyclehome)
@@ -113,42 +115,45 @@ class HomeFragment : Fragment() {
                     "Ficha Técnica En La Descripción Del Producto.\n" +
                     "Producto Importado De Usa.",false))
 
-        productos2.add(ProductosCardView("Xiaomi Poco X3 Pro 6GB 128GB","S/ 1,299.00","1149",R.drawable.xiaomipocox3,
+        productos2.add(ProductosCardView("TECLADO GAMER CON ILUMINACION TRUST GXT835 AZOR","S/ 190.00","115",R.drawable.tecladotrust,
             "CARACTERISTICAS DESTACADAS:\n" + "\n" +
-                    "Tamaño de Pantalla 6,67 \"FHD\n" +
-                    "Memoria RAM: 6 GB\n" +
-                    "Capacidad: 128 GB Almacenamiento\n" +
-                    "Procesador: Snapdragon 860\n" +
-                    "Cámara frontal: 20 MP\n" +
-                    "Cámara trasera: 48 MP + 8 MP + 2 MP\n" +
-                    "Garantía: 1 año\n" +
-                    "Tecnología: IPS.\n" +
-                    "Cristal Corning Gorilla Glass 6.\n" +
-                    "Batería: 5160 mAh.\n" +
-                    "Carga rápida de 33 W.\n" +
-                    "Puerto USB C.\n" +
-                    "Altavoces estéreo.\n" +
-                    "Certificación Hi-Res Audio.\n" +
-                    "Jack 3.5 mm de auriculares.\n" +
-                    "Lector de huellas lateral.\n" +
-                    "Versión de Android: 11.\n" +
-                    "Capa de personalización: MIUI.",false))
+                    "Membrana de tecnología clave\n" +
+                    "Altura : 40 mm\n" +
+                    "Ancho : 438 mm\n" +
+                    "Peso : 621 g\n" +
+                    "Teclado de tamaño completo : sí\n" +
+                    "Tipo de conexión : cableada\n" +
+                    "Longitud del cable cable : 180 cm\n" +
+                    "USB versión : 1.1\n" +
+                    "Tipo de conector : USB-A macho\n" +
+                    "Diseñado para juegos : sí\n" +
+                    "Tipo de juego : FPS, MMO, MOBA, RPG, RTS\n" +
+                    "Modo de juego : sí\n" +
+                    "Retroiluminación : sí\n" +
+                    "Colores de luz de fondo : Arco iris\n" +
+                    "Distribución del teclado : QWERTY\n" +
+                    "Fuente de alimentación : USB\n" +
+                    "Dispositivos compatibles : laptop, pc, consola de juegos\n" +
+                    "Consolas compatibles : PS4, Xbox One\n" +
+                    "Plataformas de software compatibles : Mac OS, Windows, Chrome OS\n" +
+                    "Teclado numérico : sí\n" +
+                    "Teclas multimedia sI : 12 funciones FN\n" +
+                    "Teclas especiales : Teclas FN\n" +
+                    "Número de llaves : 104\n" +
+                    "Vida útil : 5000000 pulsaciones clave\n" +
+                    "Rollo de 8 teclas Anti-Ghosting\n" +
+                    "Tiempo de respuesta 8 ms\n" +
+                    "Indicadores Bloqueo de mayúsculas, Bloqueo de números, Bloqueo de desplazamiento, Modo de juego",false))
 
-        productos2.add(ProductosCardView("Xiaomi Poco M3 Pro 6GB 128GB 5G teléfono M2103K19PG - Negro","S/ 1,199.00","859",R.drawable.xiaomipocom3,
+        productos2.add(ProductosCardView("Teclado Gamer RGB Mini 35 Teclas Para Una Mano GAMING","S/ 80.00","55",R.drawable.tecladorgb,
             "CARACTERISTICAS DESTACADAS:\n" + "\n" +
-                    "CPU: CPU Dimensity 700 Octa Core, hasta 2.2GHz\n" +
-                    "Pantalla: 6.5' 2400x1080P FHD + DotDisplay, frecuencia de actualización de 90Hz\n" +
-                    "RAM + ROM: 6GB + 128GB\n" +
-                    "Cámara: cámara trasera triple de 48MP + 2MP + 2MP, cámara frontal de 8MP\n" +
-                    "Batería: 5000 mAh (tipo), admite carga rápida de 18 W, cargador rápido de 22,5 W en la caja\n" +
-                    "Sistema operativo: MIUI, versión global, compatible con varios idiomas y Google Play\n" +
-                    "Otros: Wi-FI, Bluetooth 5.1, GPS, ID de huella digital, Desbloqueo facial AI, Conector para auriculares de 3,5 mm, IR Blaster, NFC\n" +
-                    "Red --- Netcom completo, doble SIM de doble modo de espera\n" +
-                    "5G: n1, n3, n7, n8, n20, n28, n38, n40, n41, n66, n77, n78\n" +
-                    "4G: LTE FDD B1 / 2/3/4/5/7/8/12/17/20/28/32/66\n" +
-                    "4G: LTE TDD B38 / 40/41\n" +
-                    "3G: WCDMA B1 / 2/4/5/8\n" +
-                    "2G: GSM 850 900 1800 1900 MHz",false))
+                    "Está diseñado para jugar especialmente para alguien a quien le gusta usar una mano para controlar el teclado en juegos de acción para movimientos rápidos.\n" +
+                    "La retroiluminación LED RGB lo convierte en un increíble teclado con una sola mano.\n" +
+                    "Teclado de una mano Diseño ergonómico: una forma ergonómica con un cómodo reposamuñecas\n" +
+                    "Lo que puede reducir la fatiga, el teclado para juegos con una gran área de reposamanos para la mano le permite usarlo con menos esfuerzo\n" +
+                    "El teclado utiliza un diseño portátil, su pequeño tamaño lo hace no solo fácil de transportar, sino que también ahorra espacio.\n" +
+                    "Retroiluminación RGB: la retroiluminación RGB admite el modo de respiración y el modo estático, hay 7 colores para elegir\n" +
+                    "El efecto de iluminación genial te traerá más diversión para el juego",false))
 
         var adapter = ProductosAdapterCV(productos)
         var adapter2 = ProductosAdapterCV(productos2)
@@ -158,6 +163,19 @@ class HomeFragment : Fragment() {
         recyclerView.adapter = adapter
         recyclerView2.layoutManager = GridLayoutManager(root.context,2)
         recyclerView2.adapter = adapter2
+
+        /*smart.setOnClickListener {
+            var intent = Intent(context, llamarSmartWatch::class.java)
+            startActivity(intent)
+        }
+        realidad.setOnClickListener {
+            var intent = Intent(context, llamarRealidad::class.java)
+            startActivity(intent)
+        }
+        compo.setOnClickListener {
+            var intent = Intent(context, llamarComponente::class.java)
+            startActivity(intent)
+        }*/
 
         return root
     }

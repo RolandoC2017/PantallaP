@@ -74,7 +74,9 @@
         <entry key="..\:/Users/HP/.gradle/caches/transforms-3/a1ad1b515fec9f19b104a334f1f5a525/transformed/jetified-whynotimagecarousel-2.0.5/res/layout/item_carousel.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable-hdpi/boton_redondo.xml" value="0.2203125" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable-hdpi/boton_redondo_claro.xml" value="0.2203125" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable-hdpi/ic_login_bg.xml" value="0.20462962962962963" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable-hdpi/indicador.xml" value="0.2203125" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable-hdpi/login_btn_bg.xml" value="0.20462962962962963" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2203125" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable-xxxhdpi/colorinertmk.xml" value="0.1125" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/drawable/boton_gris.xml" value="0.2203125" />
@@ -92,6 +94,9 @@
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_info_huawei1.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_inicio.xml" value="0.18" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_java.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_llamar_componente.xml" value="0.2" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_llamar_realidad.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_llamar_smartwatch.xml" value="0.1911231884057971" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/PantallaP/app/src/main/res/layout/activity_main2.xml" value="0.22" />
